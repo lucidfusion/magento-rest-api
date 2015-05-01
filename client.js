@@ -16,7 +16,7 @@ internals.create = function (config, options) {
     }
 
     this.oauth = internals.getOAuth(config);
-    this.options = config;
+    this.options = options;
     this.makePath = internals.makePath.bind(this);
 
     this.request = require('./request')(this);
@@ -25,7 +25,7 @@ internals.create = function (config, options) {
 };
 
 internals.makePath = function (section) {
-    return url.resolve(this.options.baseUrl, section);
+    return url.resolve(this.options.host, section);
 };
 
 module.exports = internals;

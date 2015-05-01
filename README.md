@@ -14,7 +14,7 @@ Magento Rest API Client
         token: '<Token>',
         tokenSecret: '<Token secret>'
     }, {
-        host: 'magentosite.com'
+        host: '<magentosite.com>/api/rest'
     });
 
     // Add product
