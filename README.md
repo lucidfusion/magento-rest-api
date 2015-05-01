@@ -5,7 +5,7 @@ Magento Rest API Client
 
 ##Usage Guide
 
-    var magentoRestApi = require('magento-rest-api');
+    var magentoRestApi = require('magento-rest--api');
 
     // Create api object
     var api = magentoRestApi.createClient({
